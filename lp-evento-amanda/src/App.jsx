@@ -9,7 +9,7 @@ import Rodape from "./components/Rodape"
 
 function App() {
   return (
-      <section className="min-h-screen flex flex-col bg-gray-50 text-gray-800 w-full">
+      <section className="min-h-screen flex flex-col bg-fundo text-gray-800 w-full">
       <Cabecalho/>
     <main className="flex-grow w-full space-y-6 pb-12">
       <Hero />

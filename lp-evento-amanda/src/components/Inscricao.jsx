@@ -27,10 +27,10 @@ function Inscricao() {
     return (
         // CORREÇÃO: Certifique-se de que a tag principal do componente tenha o id="inscricao"
         <article id="inscricao" className="rounded-xl bg-white p-6 shadow max-w-4xl mx-auto my-6">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Inscrição</h2>
+            <h2 className="text-2xl font-bold mb-6 text-primaria">Inscrição</h2>
             
             <form onSubmit={enviar} className="space-y-4 w-full">
-                <label className="flex flex-col gap-2 w-full text-gray-700 font-medium">
+                <label className="flex flex-col gap-2 w-full text-destaque font-medium">
                     Nome completo
                     <input
                         type="text"
@@ -43,7 +43,7 @@ function Inscricao() {
                 </label>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                    <label className="flex flex-col gap-2 w-full text-gray-700 font-medium">
+                    <label className="flex flex-col gap-2 w-full text-destaque font-medium">
                         Número de telefone
                         <input
                             type="tel"
@@ -55,7 +55,7 @@ function Inscricao() {
                         />
                     </label>
 
-                    <label className="flex flex-col gap-2 w-full text-gray-700 font-medium">
+                    <label className="flex flex-col gap-2 w-full text-destaque font-medium">
                         E-mail
                         <input
                             type="email"
@@ -71,7 +71,7 @@ function Inscricao() {
                 <div className="flex justify-end pt-2">
                     <button 
                         type="submit" 
-                        className="w-full sm:w-auto bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-8 py-3 rounded-lg transition-colors cursor-pointer text-center"
+                        className="w-full sm:w-auto bg-destaque hover:bg-primaria text-white font-bold px-8 py-3 rounded-lg transition-colors cursor-pointer text-center"
                     >
                         Quero receber
                     </button>
