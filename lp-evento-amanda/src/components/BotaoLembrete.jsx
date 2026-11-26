@@ -35,18 +35,18 @@ function BotaoLembrete() {
         }
     
      return (
-    <div className="mt-2">
+    <div className="w-full sm:w-auto">
       {/* Botão estilizado com Tailwind */}
       <button
         type="button"
         onClick={ativarLembrete}
-        className="bg-destaque hover:bg-white hover:text-primaria text-white text-sm font-semibold px-4 py-2.5 rounded-lg border border-white/30 transition-all duration-200 shadow cursor-pointer flex items-center gap-2"
+        className="w-full sm:w-auto bg-white/15 hover:bg-white hover:text-primaria text-white text-sm font-semibold px-5 py-2.5 rounded-xl border border-white/30 transition-all duration-200 shadow-sm cursor-pointer flex items-center justify-center gap-2"
       >
         🔔 Me lembre do evento
       </button>
       {/* Mensagem de status */}
       {mensagem && (
-        <p role="status" className="mt-2 text-sm text-white/90 font-medium">
+        <p role="status" className="mt-2 text-sm text-teal-50 font-medium text-center sm:text-left">
           {mensagem}
         </p>
       )}

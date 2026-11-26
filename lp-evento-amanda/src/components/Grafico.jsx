@@ -45,19 +45,19 @@ function Grafico() {
     }, []);
 
     return (
-        <section className="rounded-xl bg-white p-6 shadow max-w-4xl mx-auto my-6">
+        <section className="rounded-2xl bg-white p-5 sm:p-8 shadow-sm border border-teal-100">
             <h2 className="text-2xl font-bold text-primaria">Inscritos por Área</h2>
             <p className="text-sm text-gray-600 mt-1">
                 Distribuição dos participantes confirmados na GameJam OC 48h
             </p>
-            <div className="mt-6 flex justify-center overflow-x-auto">
+            <div className="mt-6 flex justify-center">
                 <canvas
                     ref={canvasRef}
                     width={380}
                     height={170}
                     role="img"
                     aria-label="Gráfico de barras com inscritos por área: Programação com 120, Arte 2D com 80 e Áudio/Música com 45."
-                    className="max-w-full"
+                    className="w-full max-w-[380px] h-auto"
                 >
                     {/* Texto de fallback acessível para leitores de tela caso o canvas não seja renderizado */}
                     <p>

@@ -9,20 +9,20 @@ import Grafico from "./components/Grafico";
 
 function App() {
   return (
-      <section className="min-h-screen flex flex-col bg-fundo text-gray-800 w-full">
-      <Cabecalho/>
-    <main className="flex-grow w-full space-y-6 pb-12">
-      <Hero />
-      <Sobre/>
-      <CartaoMentores/>
-      <Programacao />
-      <Grafico />
-      <div>
-      <Inscricao/>
-      </div>
-    </main>
-    <Rodape/>
-    </section>
+    <div className="min-h-screen flex flex-col bg-fundo text-gray-800 w-full">
+      <Cabecalho />
+      <main className="flex-grow w-full pb-12">
+        <Hero />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-6 sm:space-y-8 mt-6 sm:mt-8">
+          <Sobre />
+          <CartaoMentores />
+          <Programacao />
+          <Grafico />
+          <Inscricao />
+        </div>
+      </main>
+      <Rodape />
+    </div>
   )
 }
 
